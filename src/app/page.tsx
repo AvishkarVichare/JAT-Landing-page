@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Product1 from "@/components/Product1";
@@ -17,6 +18,8 @@ export default function Home() {
     <Product1></Product1>
 
     <Team></Team>
+
+    <Footer></Footer>
 
    </>
   );

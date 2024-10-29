@@ -1,6 +1,6 @@
 export default function Product1(){
     return(
-        <section className="flex items-center bg-green-50 md:items-start flex-col-reverse md:flex-row justify-between pt-[0px] pb-10 md:pt-[5px] ">
+        <section id="product" className="flex items-center bg-green-50 md:items-start flex-col-reverse md:flex-row justify-between pt-[0px] pb-10 md:pt-[5px] ">
     <div className=" md:pl-[80px] sm:px-0 xl:pl-[150px] flex items-center md:items-start flex-col w-[300px] md:w-[500px] lg:w-[700px]  ">
 
         <div className="mb-10">

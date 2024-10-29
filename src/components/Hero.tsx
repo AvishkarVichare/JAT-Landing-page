@@ -1,10 +1,18 @@
-import heroImg from '../../public/Hero.webp'
+'use client';
+
+import Link from "next/link";
+
+import { useRouter } from 'next/navigation';
+// import heroImg from '../../public/Hero.webp'
+// import Link from 'next/link';
 
 
 export default function Hero() {
     const a = ""
+    const router = useRouter();
+
     return (
-        <section className="text-gray-600 body-font bg-green-50">
+        <section id="home" className="text-gray-600 body-font bg-green-50">
         <div className="container mx-auto flex px-5 py-24 md:flex-row flex-col items-center">
           <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6 mb-10 md:mb-0">
             {/* <img className="object-cover object-center rounded" alt="hero" src="/Hero.webp"/> */}
@@ -16,8 +24,7 @@ export default function Hero() {
             </h1>
             <p className="mb-8 leading-relaxed">"Partner with us to ensure your business has access to the highest quality supplies. Don't let demand outpace your resources—explore our offerings today!"</p>
             <div className="flex justify-center">
-              <button className="inline-flex items-center  border-0 py-1 px-3 focus:outline-none text-white bg-[#a6844a] hover:bg-[#d1a65f] ease-in-out duration-300 rounded  text-[12px] md:text-base mt-1 md:mt-0">Trade</button>
-             
+              <button onClick={()=>router.push('/Market')} className="inline-flex items-center  border-0 py-1 px-3 focus:outline-none text-white bg-[#a6844a] hover:bg-[#d1a65f] ease-in-out duration-300 rounded  text-[12px] md:text-base mt-1 md:mt-0">Trade</button>
               <button className="ml-4 inline-flex bg-gray-300 text-white border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg">Know More</button>
             </div>
             
